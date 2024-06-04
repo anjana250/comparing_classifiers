@@ -16,6 +16,14 @@ Campaign Data: Number of contacts during the current campaign, days since the la
 Economic Indicators: Employment variation rate, consumer price index, consumer confidence index, Euribor 3-month rate, and the number of employees.
 The target variable is whether the client subscribed to the term deposit ('yes' or 'no'). By developing a predictive model, the bank can better identify potential clients who are more likely to subscribe, thereby maximizing the return on investment for marketing campaigns and improving overall customer satisfaction.
 
-## Metrics Chosen 
+## Data Preparation
 
-## Analysis of Each Model
+## Modeling
+
+## Model Evaluation
+
+## Evaluation
+
+## Conclusion 
+
+## Next Steps
