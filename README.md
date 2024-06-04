@@ -18,7 +18,7 @@ The target variable is whether the client subscribed to the term deposit ('yes' 
 
 ## Data Preparation
 
-The Dataset did not have any missing values but did contain 28 duplicates. Those values were dropped. The categorical columns that were 
+The Dataset did not have any missing values but did contain 28 duplicates. Those values were dropped. The categorical columns that were encoded using One Hot Encoder.
 
 ## Modeling
 The four models chosen are:
@@ -28,6 +28,7 @@ The four models chosen are:
 4. Support Vector Machines
 
 Initially these models were fitted using only their default parameters. And while the metrics were decent- there was a lot of room for improvement!
+
 <img width="400" alt="Screenshot 2024-06-04 at 11 54 59 AM" src="https://github.com/anjana250/comparing_classifiers/assets/15185723/2ecdafea-18e5-4a2b-ba21-bd68df03fcef">
 
 ### Analysis of Default Models:
@@ -36,6 +37,8 @@ Initially these models were fitted using only their default parameters. And whil
 2. KNN: There's a moderate drop in test accuracy compared to train accuracy, suggesting some overfitting.
 3. Decision Tree: Decisions Treee has a perfect Train accuracy of 1.0 and the model is overfitting significantly as indicated by the perfect train accuracy and considerably lower test accuracy.
 4. SVM: The train and test accuracies are quite close, indicating good generalization. The main issue I see with this model is train time. It took significantly longer than the other models.
+
+Improvements were made using Hyperparameter tuning and Grid Search and more metrics were added to the analysis.
 
 
 
