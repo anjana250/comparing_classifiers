@@ -126,4 +126,4 @@ The Model that did the best was Decision Tree.  The features that did the best f
 
 ## Next Steps
 
-Further improvements can be made to the hyperparameters and more time can be spent tuning them further. Other models such as Random Forest can also be tried to see if they have better results.
+Further improvements can be made to the hyperparameters and more time can be spent tuning them further. There were a few instances where there was no impact to metrics or metrics even got worse. This needs to be reviewed further to see what is happening. Other models such as Random Forest can also be tried to see if they have better results.
