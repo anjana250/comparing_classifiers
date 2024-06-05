@@ -109,6 +109,7 @@ Precision and Recall: Both are high and balanced, similar to Logistic Regression
 F1 Score: High, indicating a good balance between precision and recall.
 ROC AUC: High, indicating good discrimination between classes.
 Decision tree did really well after improvements- Train time even went down. Other than Train accuracy, all of the other metrics were improved!
+
 4. SVM:
 
 ![SVM_comparison](https://github.com/anjana250/comparing_classifiers/assets/15185723/7ea5b72d-20b2-41bd-88d6-5d5e5aec1c78)
