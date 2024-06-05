@@ -68,6 +68,11 @@ Importance: The confusion matrix provides a detailed breakdown of true positives
 
 While the initial values are okay- there is a lot of room for improvement. There is even some evidence of overfitting with Decision Tree. In order to fix this, fine tuning of hyperparamers was done.
 
+The values after improvements look like this:
+
+<img width="581" alt="Screenshot 2024-06-05 at 9 18 41 AM" src="https://github.com/anjana250/comparing_classifiers/assets/15185723/12090f26-3e84-4da6-b9f2-f35b97fd421b">
+
+
 ### Analysis after Fine Tuning Hyperparameters and Conducting Grid Search
 1. Logistic Regression:
 
@@ -77,6 +82,8 @@ Train/Test Accuracy: The model performs well on both training and test data, ind
 Precision and Recall: Both are high and balanced, indicating the model is good at identifying true positives and has a low false positive rate.
 F1 Score: High and close to Precision and Recall, reinforcing the balance between them.
 ROC AUC: High value, indicating a good ability to discriminate between classes.
+Train Time: After the improvements Train time increased substantially.
+The values overall did not change much between before and after improvements.
 
 
 2. KNN:
@@ -88,6 +95,8 @@ Train/Test Accuracy: Perfect training accuracy suggests overfitting, as the test
 Precision and Recall: Both are good but slightly lower than Logistic Regression.
 F1 Score: Reflects the balance between precision and recall but is slightly lower.
 ROC AUC: Significantly lower, indicating poorer performance in distinguishing between classes compared to other models.
+Train time: Increased after improvements.
+Overall other than train accuracy, all of the metrics actually did worse after improvements.
 
 3. Decision Tree:
 
@@ -98,7 +107,7 @@ Train/Test Accuracy: The model generalizes well, with only a slight drop in accu
 Precision and Recall: Both are high and balanced, similar to Logistic Regression.
 F1 Score: High, indicating a good balance between precision and recall.
 ROC AUC: High, indicating good discrimination between classes.
-
+Decision tree did really well after improvements- Train time even went down. Other than Train accuracy, all of the other metrics were improved!
 4. SVM:
 
 ![SVM_comparison](https://github.com/anjana250/comparing_classifiers/assets/15185723/7ea5b72d-20b2-41bd-88d6-5d5e5aec1c78)
@@ -107,16 +116,13 @@ Train/Test Accuracy: Slight drop from training to test accuracy, indicating dece
 Precision and Recall: Both are good but slightly lower than Decision Tree and Logistic Regression.
 F1 Score: Slightly lower, indicating a minor imbalance between precision and recall.
 ROC AUC: High, suggesting good discriminatory power.
+The main difference is that train time took longer after improvements. The rest of the metrics did not change very much.
 
-<img width="581" alt="Screenshot 2024-06-05 at 9 18 41 AM" src="https://github.com/anjana250/comparing_classifiers/assets/15185723/12090f26-3e84-4da6-b9f2-f35b97fd421b">
-
-The graphs displaying this information:
-
-
-
+The changes from default models to improved models is not very major but the biggest improvement appears to be the slight difference between the training and test accuracies for all models This indicated a reduction in overfitting. There are also improvements in the confusion matrices.
 
 ## Conclusion 
-The Models that did the best were Logistic Regression and Decision Tree.
+The Model that did the best was Decision Tree.  The features that did the best for Decision tree are job, month and education. Recommendation would be to look at those features directly when deciding who to reach out to for bank subscriptions. Job type has the highest importance score, indicating that the job type of the individuals in the dataset is the most influential predictor of the target variable.  Reaching out to clients that are either Retired or currently Students is a good idea. The month  also plays a significant role in determining the target variable. September, October, March, and December are the best months to reach out to clients. Education level has a moderate impact on the prediction, suggesting that the educational background of individuals influences the outcome, but not as strongly as job type or month. Illiterate Clients are the most likely to accept. 
+
 ## Next Steps
 
 Further improvements can be made to the hyperparameters and more time can be spent tuning them further. Other models such as Random Forest can also be tried to see if they have better results.
