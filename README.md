@@ -66,12 +66,13 @@ Importance: The confusion matrix provides a detailed breakdown of true positives
 <img width="581" alt="Screenshot 2024-06-05 at 9 12 19 AM" src="https://github.com/anjana250/comparing_classifiers/assets/15185723/32148ed2-10f3-40e0-a090-2a676bee12bb">
 
 
-While the initial values are okay- there is a lot of room for improvement. There is even some evidence of overfitting with Decision Tree. In order to fix this, fine tuning of hyperparamers was done.
+While the initial values are okay- there is a lot of room for improvement. There is even some evidence of overfitting with all of the models. In order to fix this, fine tuning of hyperparamers was done.
 
 The values after improvements look like this:
 
 <img width="581" alt="Screenshot 2024-06-05 at 9 18 41 AM" src="https://github.com/anjana250/comparing_classifiers/assets/15185723/12090f26-3e84-4da6-b9f2-f35b97fd421b">
 
+There are no huge improvements but there is less overfitting now which was a major concern with the default models.
 
 ### Analysis after Fine Tuning Hyperparameters and Conducting Grid Search
 1. Logistic Regression:
