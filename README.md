@@ -44,6 +44,39 @@ Improvements were made using Hyperparameter tuning and Grid Search and more metr
 
 ## Model Evaluation
 
-## Conclusion 
+### Metrics Used for Evaluation:
+1. Accuracy:
 
+Importance: Accuracy gives a general idea of how many predictions your model got right out of all predictions. It is important to know that marketing efforts are not wasted and is a way to predict how many subscriptions you can expect.
+
+2. Precision:
+
+Importance: Precision indicates how many of the clients predicted to subscribe actually did subscribe. High precision means that when the model predicts a client will subscribe, it is usually correct.
+Use Case: In marketing, a high precision rate is important to ensure that resources are not wasted on clients who are unlikely to subscribe.
+
+3. Recall (Sensitivity or True Positive Rate):
+
+Importance: Recall tells you how many of the actual subscribers were correctly identified by the model. It’s crucial when missing a potential subscriber is costly.
+High recall ensures that you are not missing out on potential subscribers, maximizing the reach of your campaign. If recall is low, you miss out on many clients who would have subscribed if targeted. This reduces potential revenue.
+
+4. F1 Score:
+
+Importance: The F1 score balances precision and recall, giving a single metric that considers both false positives and false negatives.Balancing precision and recall ensures an effective overall strategy, avoiding the pitfalls of focusing too heavily on one at the expense of the other.
+
+
+5. ROC-AUC Score:
+
+Importance: The ROC-AUC score evaluates the model’s ability to distinguish between subscribers and non-subscribers across various threshold settings. It’s a robust metric for binary classification problems.
+
+
+6. Confusion Matrix:
+
+Importance: The confusion matrix provides a detailed breakdown of true positives, true negatives, false positives, and false negatives.  Also gives you detailed insights into where your model is making errors help refine marketing strategies and improve overall targeting accuracy.
+
+
+### 
+## Conclusion 
+The Models that did the best were Logistic Regression and Decision Tree.
 ## Next Steps
+
+Further improvements can be made to the hyperparameters and more time can be spent tuning them further. Other models such as Random Forest can also be tried to see if they have better results.
